@@ -1,0 +1,67 @@
+html, body {
+  background: #F3D9DC;
+  height: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.box {
+  background-color: #88ce02;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.container {
+  border: 1px solid lavender;
+  display: flex;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  flex-flow: column;
+  align-content: center;
+  justify-content: space-around;
+}
+
+#magic-blob {
+  cursor: pointer;
+  border: 1px solid #CCADBD;
+  position: absolute;
+}
+
+#parallax-container {
+  border: 1px solid red;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+}
+#parallax-container #scene .block {
+  width: 400px;
+  height: 400px;
+}
+#parallax-container #scene .block.one {
+  bottom: 100px;
+}
+#parallax-container #scene .block.two {
+  bottom: 0px;
+}
+#parallax-container #scene .block .moon {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  top: 280px;
+}
+#parallax-container #scene .block .moon img {
+  transform: scale(2);
+}
+#parallax-container #scene .block .planet {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  left: 100px;
+  top: 220px;
+}
